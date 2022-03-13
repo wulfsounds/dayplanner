@@ -8,12 +8,8 @@
 
 🧚🏻 Hey! Listen!
 
-   * I can haz README?
-   * SCRUB A DUB DUB 🛁
-   * Slap some curves on `#saveBtn`
-   * NEW FEATURE: MULTIPLAYERS!
    * 📸  SCREENSHOTS 👀
-
+   * Add Links to Contributors
 
 ## **JavaScript Updates**
 * Fixed an issue by adding an additional condition that highlights the currentHour a color.
@@ -43,4 +39,4 @@
 <img src="https://31.media.tumblr.com/tumblr_m8rs5jxdFv1rd2i8so1_500.gif" alt="zelda-hey-listen" width="200"/>
 
 ------------------------------------------------------------------------------
-### Footer
+2022 Dev Wulf for SMU Coding Bootcamp.
