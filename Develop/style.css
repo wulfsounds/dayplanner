@@ -1,71 +1,103 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+	background-color: #f7df2b;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.container {
+	background-color: #f7df2b;
+	border: 10px solid #ffffff;
+}
+
+.row,
+.hour,
+.text {
+	border-bottom: 3px solid #fff;
 }
 
 textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+	background: transparent;
+	border: none;
+	resize: none;
+	color: #000000;
+	border-left: 1px solid black;
+	padding: 10px;
+}
+
+h1 {
+	/* -webkit-text-stroke: 1px black; */
+	text-shadow: -0.4px -0.4px 0 #000, 0.4px -0.4px 0 #000, -0.4px 0.4px 0 #000,
+		0.4px 0.4px 0 #000;
+}
+
+h2 {
+	font-family: "BhuTuka Expanded One", cursive;
+	font-weight: 600;
+	font-style: normal;
 }
 
 .jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+	font-family: blenny, sans-serif;
+	/* -webkit-text-stroke: 1px black; */
+	font-weight: 900;
+	font-style: normal;
+	text-align: center;
+	background-color: #ff6700;
+	color: #ffffff;
+	border-radius: 0;
+	border-bottom: 10px solid rgb(255, 255, 255);
 }
 
 .description {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 .time-block {
-  text-align: center;
-  border-radius: 15px;
+	text-align: center;
+	/* border-radius: 15px; */
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+	white-space: pre-wrap;
+	height: 80px;
+	border-top: 1px solid white;
+	/* border-top-right-radius: 15px; */
+	/* border-bottom-right-radius: 15px; */
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+	background-color: #ffffff;
+	color: #000000;
+	border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+	background-color: #d3d3d3;
+	color: white;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+	background-color: #ff6961;
+	color: white;
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+	background-color: #77dd77;
+	color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+	border: none;
+	border-left: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	/* border-top-right-radius: 15px; */
+	/* border-bottom-right-radius: 15px; */
+	background-color: #06aed5;
+	color: white;
 }
 
-.saveBtn i:hover {
+/* .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
-}
+} */

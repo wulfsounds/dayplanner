@@ -1,111 +1,108 @@
-let timeDate = moment().format('LL');
-let timeNow = moment().format('LT');
-let jumbo = $('.jumbotron');
-let hour = $('#time')
-let workDay = getLocal();
-
-let btnIdx = 0
+// Global Variables
+let currentDate = moment().format("LL");
+let currentTime = moment().format("LT");
+let jumbo = $(".jumbotron");
+let hour = $("#time");
+let dayTrip = getLocal();
+let btnIdx = 0;
+// let appt = document.querySelectorAll('#textarea') // added for debugging
 
 // Display Current Date and Time
-$('h1').text(timeDate);
-$('h2').text(timeNow);
+$("h2").text(`${currentDate} ${currentTime}`);
 
+// Activate planner and update with local storage  // DEBUG: #textarea is clearing on page refresh
+$(".container").on("click", ".saveBtn", function () {
+	getLocal();
+	btnIdx = $(this).index(".saveBtn");
 
-// Activate planner and updates with local storage
-$('.container').on('click', '.saveBtn', function() {
-    getLocal();
-    btnIdx = $(this).index('.saveBtn');
+	var textContent = $(this).siblings(".text").val();
+	dayTrip[btnIdx] = textContent;
 
-    var textContent = $(this).siblings('.text').val();
-    workDay[btnIdx] = (textContent);
+	pushLocal();
+});
 
-    pushLocal();
-})
-
-
-// Pass new call data to local storage
+// Takes the call data, converts objects to string; push to local storage
 function pushLocal() {
-    textString = JSON.stringify(workDay);
-    localStorage.setItem("appointment", textString);    
+	textString = JSON.stringify(dayTrip);
+	localStorage.setItem("appointment", textString);
 }
 
-// Recieved stored cal data from local storage
+// Recieve call data from local storage; assigns it to the description.
 function getLocal() {
-    let pullLocal = localStorage.getItem('appointment')
-    if(pullLocal === null){
-        pullLocal = [
-            {
-                description: '',
-                hours: 9, 
-            },
-            {
-                description: '',
-                hours: 10, 
-            },    
-            {
-                description: '',
-                hours: 11, 
-            },    
-            {
-                description: '',
-                hours: 12, 
-            },    
-            {
-                description: '',
-                hours: 1, 
-            },    
-            {
-                description: '',
-                hours: 2, 
-            },    
-            {
-                description: '',
-                hours: 3,
-            },    
-            {
-                description: '',
-                hours: 4,
-            },    
-            {
-                description: '',
-                hours: 5
-            }    
-        ]
-    } else {
-        pullLocal = JSON.parse(pullLocal);
-    }
-    return pullLocal;
+	let localItems = localStorage.getItem("appointment");
+	if (localItems === null) {
+		localItems = [
+			{
+				description: "",
+				hours: 9,
+			},
+			{
+				description: "",
+				hours: 10,
+			},
+			{
+				description: "",
+				hours: 11,
+			},
+			{
+				description: "",
+				hours: 12,
+			},
+			{
+				description: "",
+				hours: 1,
+			},
+			{
+				description: "",
+				hours: 2,
+			},
+			{
+				description: "",
+				hours: 3,
+			},
+			{
+				description: "",
+				hours: 4,
+			},
+			{
+				description: "",
+				hours: 5,
+			},
+		];
+	} else {
+		localItems = JSON.parse(localItems);
+	}
+	return localItems;
 }
 
+// let localItems = localStorage.getItem('appointment') // added for debugging
+// appt.values = localStorage.getItem('appointment') // added for debugging
 
+// Colorizes the container based on the time of day.
+$(".container")
+	.children()
+	.each((i, e) => {
+		// Current time based on a 24-hour clock
+		let currentTime = moment().format("H");
+		// past time
+		if (i + 9 < currentTime) {
+			$(e).css("background-color", "#BEBEBE");
+		}
+		// future time
+		else if (i + 9 > currentTime) {
+			$(e).css("background-color", "green");
+		}
+		// present time
+		else {
+			$(e).css("background-color", "red");
+		}
 
+		// Switch current day theme to night
 
-// function handleFormSubmit (e) {
-//     e.preventDefault();    
-// }
+		// Variables for Night Theme
+	});
 
-// function timeline () {
-//     // moment time: h .. changes the time to a single number
-//     let past;
-//     let present;
-//     let future;
-//     const currentHour = moment().format(h);
-
-//     if ([i].hours) {
-        
-//     }
-    
-// }
-
-
-$('.container').children().each((i, e) => {
-    
-    let timeNow = moment().format('H');
-    if ((i + 9) < timeNow) {
-        $(e).css("background-color", '#BEBEBE')
-    } else {
-        $(e).css("background-color", "green")
-    }
-})
-
-$('.container').children().find('#textarea').each((i, e) => $(e).val(workDay[i].description));
+$(".container")
+	.children()
+	.find("#textarea")
+	.each((i, e) => $(e).val(dayTrip[i].description));
