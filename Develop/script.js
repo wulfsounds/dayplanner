@@ -17,6 +17,9 @@ $(".container").on("click", ".saveBtn", function () {
 
 	var textContent = $(this).siblings(".text").val();
 	dayTrip[btnIdx] = textContent;
+	
+	//Breakpoints
+
 
 	pushLocal();
 });
@@ -31,44 +34,7 @@ function pushLocal() {
 function getLocal() {
 	let localItems = localStorage.getItem("appointment");
 	if (localItems === null) {
-		localItems = [
-			{
-				description: "",
-				hours: 9,
-			},
-			{
-				description: "",
-				hours: 10,
-			},
-			{
-				description: "",
-				hours: 11,
-			},
-			{
-				description: "",
-				hours: 12,
-			},
-			{
-				description: "",
-				hours: 1,
-			},
-			{
-				description: "",
-				hours: 2,
-			},
-			{
-				description: "",
-				hours: 3,
-			},
-			{
-				description: "",
-				hours: 4,
-			},
-			{
-				description: "",
-				hours: 5,
-			},
-		];
+		localItems = Array(9).fill("");
 	} else {
 		localItems = JSON.parse(localItems);
 	}
@@ -105,4 +71,4 @@ $(".container")
 $(".container")
 	.children()
 	.find("#textarea")
-	.each((i, e) => $(e).val(dayTrip[i].description));
+	.each((i, e) => $(e).val(dayTrip[i]));
