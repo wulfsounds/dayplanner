@@ -8,9 +8,7 @@
 
 🧚🏻 Hey! Listen!
 
-   * COLORS NOW WITH MORE GRAY! 
    * I can haz README?
-   * ====>Fix indentions on HTML (More at 4)
    * SCRUB A DUB DUB 🛁
    * Slap some curves on `#saveBtn`
    * NEW FEATURE: MULTIPLAYERS!
@@ -34,7 +32,10 @@
   
 <img src="./images/four-swords.png" alt="zelda-four-swords" width="200" />
 
-**MULTIPLAYERS!! :D**
+**INTRODUCING MULTIPLAYERS!! :D**
+* Eugene Ahn
+* Kelly Jefferies
+* Daniel Norred
 
 ## **Sources**
 ## **ScreenShots**

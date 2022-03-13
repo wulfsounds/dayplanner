@@ -86,15 +86,15 @@ $(".container")
 		let currentTime = moment().format("H");
 		// past time
 		if (i + 9 < currentTime) {
-			$(e).css("background-color", "#BEBEBE");
+			$(e).css("background-color", "#8ce4f8");
 		}
 		// future time
 		else if (i + 9 > currentTime) {
-			$(e).css("background-color", "green");
+			$(e).css("background-color", "#41a436");
 		}
 		// present time
 		else {
-			$(e).css("background-color", "red");
+			$(e).css("background-color", "#fff9cc");
 		}
 
 		// Switch current day theme to night
