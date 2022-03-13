@@ -8,34 +8,49 @@
 
 🧚🏻 Hey! Listen!
 
-   * 📸  SCREENSHOTS 👀
-   * Add Links to Contributors
-
 ## **JavaScript Updates**
-* Fixed an issue by adding an additional condition that highlights the currentHour a color.
+
+   * Fixed an issue by adding an additional condition that highlights the currentHour a color.
+
 ## **HTML Updates**
-* Formatted HTML and renamed headline.
-* Moved date and time to a single `<h2>`
+
+   * Formatted HTML and renamed headline.
+   * Moved date and time to a single `<h2>`
+
 ## **CSS Updates**
-* Added a big juicy 🍊 color to `.jumbotron`
-* Gettin' box-yyy: Added borders to `.container` and `.row` elements
-* FONTS! Gathered fonts from Google and Adobe. 
-   - Adobe fonts creditted to the owner where applicable.
+
+   * Added a big juicy 🍊 color to `.jumbotron`
+   * Gettin' box-yyy: Added borders to `.container` and `.row` elements
+   * FONTS! Gathered fonts from Google and Adobe. 
+      - Adobe fonts creditted to the owner where applicable.
 
 ## **Troubleshooting**
-* On refresh, all text areas clear despite local storage.
+
+
 ## **Contributers**
   
 <img src="./images/four-swords.png" alt="zelda-four-swords" width="200" />
 
 **INTRODUCING MULTIPLAYERS!! :D**
-* Eugene Ahn
-* Kelly Jefferies
-* Daniel Norred
+
+   * Eugene Ahn
+   * Kelly Jefferies
+   * Daniel Norred
 
 ## **Sources**
+
 ## **ScreenShots**
+
+![Daytripper-gif](./images/Daytripper-vid-low.gif)
+
+![Save-button](./images/save-button.gif)
+
+<img src="./images/schedule-grab.jpg" width=500 />
+
+<img src="./images/Daytrip-grab.jpg" width=900 />
+
 ## **Links**
+
 <img src="https://31.media.tumblr.com/tumblr_m8rs5jxdFv1rd2i8so1_500.gif" alt="zelda-hey-listen" width="200"/>
 
 ------------------------------------------------------------------------------
