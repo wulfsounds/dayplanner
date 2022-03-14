@@ -46,11 +46,19 @@ Get this [Repo](https://wulfsounds.github.io/daytripper/)
 
 ## **ScreenShots**
 
+* Here's a quick demo.
+
 ![Daytripper-gif](./images/Daytripper-vid-low.gif)
+
+* Save Buttons are dynamic, just hover and click.
 
 ![Save-button](./images/save-button.gif)
 
+* Simple, clean, and vibrant colors
+
 <img src="./images/schedule-grab.jpg" width=500 />
+
+* A scheduler perfect for a DayTripper.
 
 <img src="./images/Daytrip-grab.jpg" width=900 />
 
