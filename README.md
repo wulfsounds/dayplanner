@@ -51,7 +51,11 @@
 
 ## **Links**
 
-<img src="https://31.media.tumblr.com/tumblr_m8rs5jxdFv1rd2i8so1_500.gif" alt="zelda-hey-listen" width="200"/>
+<!-- <img src="https://31.media.tumblr.com/tumblr_m8rs5jxdFv1rd2i8so1_500.gif" alt="zelda-hey-listen" width="200"/> -->
+
+Deploy on [GitHub](https://github.com/wulfsounds/daytripper)
+
+Get this [Repo](https://wulfsounds.github.io/daytripper/)
 
 ------------------------------------------------------------------------------
 2022 Dev Wulf for SMU Coding Bootcamp.
